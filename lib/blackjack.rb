@@ -70,6 +70,8 @@ def runner
     if response.is_a? Numeric
       total += response
       display_card_total(response)
+    else
+      card_total(total)
     end
   end
   end_game(total)
