@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -21,7 +23,8 @@ end
 
 def get_user_input
   # code #get_user_input here
-  gets.chomp
+  input = gets
+  input
 end
 
 def end_game(card_total)
@@ -60,6 +63,18 @@ end
 #####################################################
 
 def runner
-  
+  # code runner here
+  welcome
+  total = initial_round
+  until total > 21 do
+    response = hit?(total)
+    if response.is_a? Numeric
+      binding.pry
+      total += response
+      display_card_total(response)
+    end
+  end
+  end_game
 end
     
+hit?(2)
