@@ -68,8 +68,8 @@ def runner
   until total > 21 do
     response = hit?(total)
     if response.is_a? Numeric
-      binding.pry
       total += response
+            binding.pry
       display_card_total(response)
     end
   end
