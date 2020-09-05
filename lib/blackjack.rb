@@ -66,9 +66,9 @@ def runner
   welcome
   total = initial_round
   until total > 21 do
-    response = hit?(total)
-    if response.is_a? Numeric
-      total += response
+    res = hit?(total)
+    if res.is_a? Numeric
+      total += res
       display_card_total(response)
     else
       card_total(total)
