@@ -71,7 +71,6 @@ def runner
       total += response
       display_card_total(response)
     end
-                binding.pry
   end
   end_game
 end
