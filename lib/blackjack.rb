@@ -67,7 +67,7 @@ def runner
   total = initial_round
   until total > 21 do
     res = hit?(total)
-    if res.is_a? Numeric
+    if res.is_a? Integer
       total += res
       display_card_total(res)
     end
