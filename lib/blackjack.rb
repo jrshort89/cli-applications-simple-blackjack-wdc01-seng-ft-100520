@@ -69,9 +69,9 @@ def runner
     response = hit?(total)
     if response.is_a? Numeric
       total += response
-            binding.pry
       display_card_total(response)
     end
+                binding.pry
   end
   end_game
 end
