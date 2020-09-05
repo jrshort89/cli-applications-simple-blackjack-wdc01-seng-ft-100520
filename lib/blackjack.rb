@@ -70,8 +70,6 @@ def runner
     if res.is_a? Numeric
       total += res
       display_card_total(res)
-    else
-      card_total(total)
     end
   end
   end_game(total)
