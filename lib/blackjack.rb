@@ -69,7 +69,7 @@ def runner
     res = hit?(total)
     if res.is_a? Numeric
       total += res
-      display_card_total(response)
+      display_card_total(res)
     else
       card_total(total)
     end
