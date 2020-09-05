@@ -75,5 +75,3 @@ def runner
   end
   end_game
 end
-    
-hit?(2)
