@@ -48,6 +48,7 @@ def hit?(num)
     prompt_user
     get_user_input
   end
+  input
 end
 
 def invalid_command
@@ -60,13 +61,6 @@ end
 #####################################################
 
 def runner
-  # code runner here
-  welcome
-  total = initial_round
-  until total > 21 do
-    hit?(total)
-    display_card_total(total)
-  end
-     end_game(total)
+  
 end
     
